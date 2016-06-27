@@ -8,5 +8,6 @@ dependencies:
   - field
   - options
   - text
+  - user
 version: 8.x-1.0
 package: EBCO
