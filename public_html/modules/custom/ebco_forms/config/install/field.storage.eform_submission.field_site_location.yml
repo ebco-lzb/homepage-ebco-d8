@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eform
+    - options
+id: eform_submission.field_site_location
+field_name: field_site_location
+entity_type: eform_submission
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'EBCO Corp-4135 E. Cotton Center Blvd, Phoenix 85040 602-470-2490'
+      label: 'EBCO Corp-4135 E. Cotton Center Blvd, Phoenix 85040 602-470-2490'
+    -
+      value: 'Camelback-6828 E Camelback Road, Scottsdale 85251 602-426-5292 X6130'
+      label: 'Camelback-6828 E Camelback Road, Scottsdale 85251 602-426-5292 X6130'
+    -
+      value: 'Bed and Dining-6950 W. Bell Road Suite 100, Glendale 85308 602-426-5292 X6230'
+      label: 'Bed and Dining-6950 W. Bell Road Suite 100, Glendale 85308 602-426-5292 X6230'
+    -
+      value: 'Broadway-7671 E. Broadway Blvd, Tucson 85710 602-426-5292 X6330'
+      label: 'Broadway-7671 E. Broadway Blvd, Tucson 85710 602-426-5292 X6330'
+    -
+      value: 'Ina-2040 W. Ina Road, Tucson 85704 602-426-5292 X6430'
+      label: 'Ina-2040 W. Ina Road, Tucson 85704 602-426-5292 X6430'
+    -
+      value: 'Glendale-6976 W. Bell Road, Glendale 85308 602-426-5292 X6530'
+      label: 'Glendale-6976 W. Bell Road, Glendale 85308 602-426-5292 X6530'
+    -
+      value: 'Chandler-3055 W. Chandler Blvd, Chandler 85226 602-426-5292 X6630'
+      label: 'Chandler-3055 W. Chandler Blvd, Chandler 85226 602-426-5292 X6630'
+    -
+      value: 'Mesa-1430 S. Power Road, Mesa 85206 602-426-5292 X6730'
+      label: 'Mesa-1430 S. Power Road, Mesa 85206 602-426-5292 X6730'
+    -
+      value: 'Scottsdale-15836 N. Scottsdale Road, Scottsdale 85254 602-426-5292 X6830'
+      label: 'Scottsdale-15836 N. Scottsdale Road, Scottsdale 85254 602-426-5292 X6830'
+    -
+      value: 'Goodyear-15320 W. McDowell Road, Goodyear 85395 602-426-5290 X6030'
+      label: 'Goodyear-15320 W. McDowell Road, Goodyear 85395 602-426-5290 X6030'
+    -
+      value: 'Tucson Whs-4221 S. Santa Rita Ave. #111, Tucson, AZ 85714 602-426-5292 X2270'
+      label: 'Tucson Whs-4221 S. Santa Rita Ave. #111, Tucson, AZ 85714 602-426-5292 X2270'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

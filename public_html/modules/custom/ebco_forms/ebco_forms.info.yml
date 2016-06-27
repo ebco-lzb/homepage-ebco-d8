@@ -1,0 +1,11 @@
+name: 'EBCO Forms'
+description: 'Feature for EBCO''s Forms'
+type: module
+core: 8.x
+dependencies:
+  - eform
+  - field
+  - options
+  - text
+version: 8.x-1.0
+package: EBCO

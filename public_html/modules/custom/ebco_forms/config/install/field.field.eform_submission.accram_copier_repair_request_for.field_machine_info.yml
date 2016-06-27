@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.accram_copier_repair_request_for
+    - field.storage.eform_submission.field_machine_info
+  module:
+    - options
+id: eform_submission.accram_copier_repair_request_for.field_machine_info
+field_name: field_machine_info
+entity_type: eform_submission
+bundle: accram_copier_repair_request_for
+label: 'Machine Information'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

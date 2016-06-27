@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eform
+    - options
+id: eform_submission.field_machine_info
+field_name: field_machine_info
+entity_type: eform_submission
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'EBCO- KONICA MINOLTA bizhub C552 A0P1011000580'
+      label: 'EBCO- KONICA MINOLTA bizhub C552 A0P1011000580'
+    -
+      value: 'EBCO- MURATEC MFX-C2828 A0ED511000096'
+      label: 'EBCO- MURATEC MFX-C2828 A0ED511000096'
+    -
+      value: 'CAMELBACK- KONICA MINOLTA bizhub C353 A0930Y1006272'
+      label: 'CAMELBACK- KONICA MINOLTA bizhub C353 A0930Y1006272'
+    -
+      value: 'BED & DINING- SHARP MX-2600N 8507187600'
+      label: 'BED & DINING- SHARP MX-2600N 8507187600'
+    -
+      value: 'BROADWAY- KONICA MINOLTA bizhub C353 A02E010007135'
+      label: 'BROADWAY- KONICA MINOLTA bizhub C353 A02E010007135'
+    -
+      value: 'INA- KONICA MINOLTA generic 35C-4 A02E010006963'
+      label: 'INA- KONICA MINOLTA generic 35C-4 A02E010006963'
+    -
+      value: 'GLENDALE- KONICA MINOLTA Bizhub C353 A02E010007172'
+      label: 'GLENDALE- KONICA MINOLTA Bizhub C353 A02E010007172'
+    -
+      value: 'GLENDALE- MURATEC PFP08 A0WJWY3037121'
+      label: 'GLENDALE- MURATEC PFP08 A0WJWY3037121'
+    -
+      value: 'CHANDLER- KONICA MINOLTA MF30-1 A02E010018863'
+      label: 'CHANDLER- KONICA MINOLTA MF30-1 A02E010018863'
+    -
+      value: 'MESA- KONICA MINOLTA bizhub C353 A02E010016786'
+      label: 'MESA- KONICA MINOLTA bizhub C353 A02E010016786'
+    -
+      value: 'SCOTTSDALE- KONICA MINOLTA GENERIC 35C-4 A02E010014505'
+      label: 'SCOTTSDALE- KONICA MINOLTA GENERIC 35C-4 A02E010014505'
+    -
+      value: 'GOODYEAR- KONICA MINOLTA bizhub C360 A0ED011000163'
+      label: 'GOODYEAR- KONICA MINOLTA bizhub C360 A0ED011000163'
+    -
+      value: 'TUCSON WHS- KONICA MINOLTA MF30-1 A121511000115'
+      label: 'TUCSON WHS- KONICA MINOLTA MF30-1 A121511000115'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

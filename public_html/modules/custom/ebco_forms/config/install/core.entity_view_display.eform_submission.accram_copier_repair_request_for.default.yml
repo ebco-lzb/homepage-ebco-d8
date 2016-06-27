@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.accram_copier_repair_request_for
+    - field.field.eform_submission.accram_copier_repair_request_for.field_des_of_problem
+    - field.field.eform_submission.accram_copier_repair_request_for.field_machine_info
+    - field.field.eform_submission.accram_copier_repair_request_for.field_site
+    - field.field.eform_submission.accram_copier_repair_request_for.field_site_location
+  module:
+    - options
+    - text
+id: eform_submission.accram_copier_repair_request_for.default
+targetEntityType: eform_submission
+bundle: accram_copier_repair_request_for
+mode: default
+content:
+  field_des_of_problem:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_machine_info:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_site:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_site_location:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+hidden: {  }

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'ACCRAM Copier Repair Request Form'
+type: accram_copier_repair_request_for
+description: 'ACCRAM Copier Repair Request Form'
+form_title: 'ACCRAM Copier Repair Request Form'
+help: ''
+form_status: EFORM_OPEN
+resubmit_action: EFORM_RESUBMIT_NEW
+disallow_text:
+  value: "<p>You can no</p>\r\n"
+  format: basic_html
+preview_page: false
+submission_page_title: 'ACCRAM Copier Repair Request Form'
+submission_text:
+  value: "<p><strong>Please Submit Your ACRAM Request Here</strong></p>\r\n"
+  format: basic_html
+submission_show_submitted: false
+draftable: false
+admin_submissions_view: ''
+user_submissions_view: ''

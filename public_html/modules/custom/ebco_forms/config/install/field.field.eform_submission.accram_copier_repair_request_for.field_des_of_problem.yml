@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.accram_copier_repair_request_for
+    - field.storage.eform_submission.field_des_of_problem
+  module:
+    - text
+id: eform_submission.accram_copier_repair_request_for.field_des_of_problem
+field_name: field_des_of_problem
+entity_type: eform_submission
+bundle: accram_copier_repair_request_for
+label: 'Description of Problem'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

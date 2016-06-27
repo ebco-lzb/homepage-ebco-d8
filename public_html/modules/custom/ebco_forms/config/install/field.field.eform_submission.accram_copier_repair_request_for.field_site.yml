@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.accram_copier_repair_request_for
+    - field.storage.eform_submission.field_site
+id: eform_submission.accram_copier_repair_request_for.field_site
+field_name: field_site
+entity_type: eform_submission
+bundle: accram_copier_repair_request_for
+label: 'Site Contact'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
