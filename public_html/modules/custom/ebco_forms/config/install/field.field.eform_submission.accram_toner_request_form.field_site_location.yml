@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.accram_toner_request_form
+    - field.storage.eform_submission.field_site_location
+  module:
+    - options
+id: eform_submission.accram_toner_request_form.field_site_location
+field_name: field_site_location
+entity_type: eform_submission
+bundle: accram_toner_request_form
+label: 'Site Location'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

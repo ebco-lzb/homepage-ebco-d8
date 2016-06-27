@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.accram_toner_request_form
+    - field.storage.eform_submission.field_machine_info
+  module:
+    - options
+id: eform_submission.accram_toner_request_form.field_machine_info
+field_name: field_machine_info
+entity_type: eform_submission
+bundle: accram_toner_request_form
+label: 'Machine Information'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

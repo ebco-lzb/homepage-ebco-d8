@@ -1,0 +1,10 @@
+name: 'EBCO Core'
+description: 'EBCO Core Functions'
+type: module
+core: 8.x
+dependencies:
+  - ckeditor
+  - editor
+  - filter
+version: 8.x-1.0
+package: EBCO
