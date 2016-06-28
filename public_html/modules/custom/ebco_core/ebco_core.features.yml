@@ -1,2 +1,24 @@
 bundle: ebco
+excluded:
+  - eform.type.dollar_transfer_request_form
+  - core.entity_form_display.eform_submission.dollar_transfer_request_form.default
+  - core.entity_view_display.eform_submission.dollar_transfer_request_form.default
+  - field.field.eform_submission.dollar_transfer_request_form.field_amount_to_be_transferred
+  - field.field.eform_submission.dollar_transfer_request_form.field_comments
+  - field.field.eform_submission.dollar_transfer_request_form.field_customer_code
+  - field.field.eform_submission.dollar_transfer_request_form.field_first_name
+  - field.field.eform_submission.dollar_transfer_request_form.field_from_delivery_document_1
+  - field.field.eform_submission.dollar_transfer_request_form.field_last_name
+  - field.field.eform_submission.dollar_transfer_request_form.field_store
+  - field.field.eform_submission.dollar_transfer_request_form.field_to_delivery_document_2
+  - field.field.eform_submission.dollar_transfer_request_form.field_your_email
+  - field.storage.eform_submission.field_amount_to_be_transferred
+  - field.storage.eform_submission.field_comments
+  - field.storage.eform_submission.field_customer_code
+  - field.storage.eform_submission.field_first_name
+  - field.storage.eform_submission.field_from_delivery_document_1
+  - field.storage.eform_submission.field_last_name
+  - field.storage.eform_submission.field_store
+  - field.storage.eform_submission.field_to_delivery_document_2
+  - field.storage.eform_submission.field_your_email
 required: true

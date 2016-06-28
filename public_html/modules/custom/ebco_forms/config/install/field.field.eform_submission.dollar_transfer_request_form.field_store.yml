@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.dollar_transfer_request_form
+    - field.storage.eform_submission.field_store
+  module:
+    - options
+id: eform_submission.dollar_transfer_request_form.field_store
+field_name: field_store
+entity_type: eform_submission
+bundle: dollar_transfer_request_form
+label: Store
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

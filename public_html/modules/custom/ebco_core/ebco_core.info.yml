@@ -6,7 +6,10 @@ dependencies:
   - ckeditor
   - editor
   - eform
+  - field
   - filter
+  - options
+  - text
   - user
 version: 8.x-1.0
 package: EBCO

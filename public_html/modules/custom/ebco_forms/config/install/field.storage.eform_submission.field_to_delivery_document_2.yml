@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eform
+id: eform_submission.field_to_delivery_document_2
+field_name: field_to_delivery_document_2
+entity_type: eform_submission
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

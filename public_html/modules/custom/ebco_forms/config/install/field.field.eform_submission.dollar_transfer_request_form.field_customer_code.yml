@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.dollar_transfer_request_form
+    - field.storage.eform_submission.field_customer_code
+id: eform_submission.dollar_transfer_request_form.field_customer_code
+field_name: field_customer_code
+entity_type: eform_submission
+bundle: dollar_transfer_request_form
+label: 'Customer Code'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Dollar Transfer Request Form'
+type: dollar_transfer_request_form
+description: 'Dollar Transfer Request Form'
+form_title: ''
+help: ''
+form_status: EFORM_OPEN
+resubmit_action: EFORM_RESUBMIT_NEW
+disallow_text:
+  value: ''
+  format: basic_html
+preview_page: false
+submission_page_title: 'Dollar Transfer Request Form'
+submission_text:
+  value: "<p>Please Submit Your Dollar Transfer Request Here</p>\r\n\r\n<p>This form is used to transfer funds between tickets.</p>\r\n"
+  format: basic_html
+submission_show_submitted: false
+draftable: false
+admin_submissions_view: ''
+user_submissions_view: ''

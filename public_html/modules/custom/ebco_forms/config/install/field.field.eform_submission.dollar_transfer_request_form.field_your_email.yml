@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.dollar_transfer_request_form
+    - field.storage.eform_submission.field_your_email
+id: eform_submission.dollar_transfer_request_form.field_your_email
+field_name: field_your_email
+entity_type: eform_submission
+bundle: dollar_transfer_request_form
+label: 'Your Email'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

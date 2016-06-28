@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eform
+    - options
+id: eform_submission.field_store
+field_name: field_store
+entity_type: eform_submission
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: '01 - Camelback'
+    -
+      value: '2'
+      label: '02 - Bedrooms & Dining'
+    -
+      value: '3'
+      label: '03 - Broadway'
+    -
+      value: '4'
+      label: '04 - Ina'
+    -
+      value: '5'
+      label: '05 - Glendale'
+    -
+      value: '6'
+      label: '06 - Chandler'
+    -
+      value: '7'
+      label: '07 - Mesa'
+    -
+      value: '8'
+      label: '08 - Scottsdale'
+    -
+      value: '10'
+      label: '10 - Goodyear'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

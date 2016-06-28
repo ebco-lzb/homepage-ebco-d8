@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.dollar_transfer_request_form
+    - field.storage.eform_submission.field_from_delivery_document_1
+id: eform_submission.dollar_transfer_request_form.field_from_delivery_document_1
+field_name: field_from_delivery_document_1
+entity_type: eform_submission
+bundle: dollar_transfer_request_form
+label: 'From Delivery Document #1'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

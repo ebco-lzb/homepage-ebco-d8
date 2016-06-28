@@ -1,0 +1,83 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.dollar_transfer_request_form
+    - field.field.eform_submission.dollar_transfer_request_form.field_amount_to_be_transferred
+    - field.field.eform_submission.dollar_transfer_request_form.field_comments
+    - field.field.eform_submission.dollar_transfer_request_form.field_customer_code
+    - field.field.eform_submission.dollar_transfer_request_form.field_first_name
+    - field.field.eform_submission.dollar_transfer_request_form.field_from_delivery_document_1
+    - field.field.eform_submission.dollar_transfer_request_form.field_last_name
+    - field.field.eform_submission.dollar_transfer_request_form.field_store
+    - field.field.eform_submission.dollar_transfer_request_form.field_to_delivery_document_2
+    - field.field.eform_submission.dollar_transfer_request_form.field_your_email
+  module:
+    - options
+    - text
+id: eform_submission.dollar_transfer_request_form.default
+targetEntityType: eform_submission
+bundle: dollar_transfer_request_form
+mode: default
+content:
+  field_amount_to_be_transferred:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_comments:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_customer_code:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_first_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_from_delivery_document_1:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_last_name:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_store:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_to_delivery_document_2:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_your_email:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+hidden: {  }
