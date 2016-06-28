@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.accram_toner_request_form
+    - field.field.eform_submission.accram_toner_request_form.field_machine_info
+    - field.field.eform_submission.accram_toner_request_form.field_site
+    - field.field.eform_submission.accram_toner_request_form.field_site_location
+    - field.field.eform_submission.accram_toner_request_form.field_toner_supplies_needed
+  module:
+    - options
+id: eform_submission.accram_toner_request_form.default
+targetEntityType: eform_submission
+bundle: accram_toner_request_form
+mode: default
+content:
+  field_machine_info:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_site:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_site_location:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_toner_supplies_needed:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+hidden: {  }

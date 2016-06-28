@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eform
+    - options
+id: eform_submission.field_toner_supplies_needed
+field_name: field_toner_supplies_needed
+entity_type: eform_submission
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Black Toner'
+      label: 'Black Toner'
+    -
+      value: 'Yellow Toner'
+      label: 'Yellow Toner'
+    -
+      value: 'Cyan Toner'
+      label: 'Cyan Toner'
+    -
+      value: 'Magenta Toner'
+      label: 'Magenta Toner'
+    -
+      value: 'Waste Toner Cartridge'
+      label: 'Waste Toner Cartridge'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eform.type.accram_toner_request_form
+    - field.storage.eform_submission.field_toner_supplies_needed
+  module:
+    - options
+id: eform_submission.accram_toner_request_form.field_toner_supplies_needed
+field_name: field_toner_supplies_needed
+entity_type: eform_submission
+bundle: accram_toner_request_form
+label: 'Toner Supplies Needed'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
