@@ -1,0 +1,8 @@
+name: 'EBCO Great Idea Log'
+description: 'The Great Idea Log'
+type: module
+core: 8.x
+dependencies:
+  - views
+version: 8.x-1.0
+package: EBCO
