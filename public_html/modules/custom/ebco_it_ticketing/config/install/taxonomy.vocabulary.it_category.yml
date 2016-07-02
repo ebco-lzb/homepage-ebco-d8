@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'IT Category'
+vid: it_category
+description: 'Category''s of support'
+hierarchy: 0
+weight: 0
