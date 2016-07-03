@@ -3,13 +3,12 @@ description: 'EBCO Core Functions'
 type: module
 core: 8.x
 dependencies:
+  - block
   - ckeditor
   - editor
   - eform
-  - field
   - filter
-  - options
-  - text
+  - system
   - user
 version: 8.x-1.0
 package: EBCO

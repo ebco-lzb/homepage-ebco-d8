@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: great-idea
+label: 'Great Idea'
+description: ''
+locked: false

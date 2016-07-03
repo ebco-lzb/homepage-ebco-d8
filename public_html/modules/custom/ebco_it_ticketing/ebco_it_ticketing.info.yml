@@ -2,8 +2,15 @@ name: 'Ebco IT Ticketing'
 type: module
 core: 8.x
 dependencies:
+  - field
+  - field_group
   - menu_ui
   - node
+  - options
+  - path
   - taxonomy
+  - text
+  - user
+  - views
 version: 8.x-1.0
 package: EBCO

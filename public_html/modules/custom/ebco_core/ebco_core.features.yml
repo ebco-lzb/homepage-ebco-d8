@@ -21,4 +21,6 @@ excluded:
   - field.storage.eform_submission.field_store
   - field.storage.eform_submission.field_to_delivery_document_2
   - field.storage.eform_submission.field_your_email
+  - block.block.greatidea
+  - system.menu.great-idea
 required: true

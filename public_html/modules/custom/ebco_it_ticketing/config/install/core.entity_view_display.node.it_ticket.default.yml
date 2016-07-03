@@ -1,0 +1,54 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.it_ticket.field_it_assigned
+    - field.field.node.it_ticket.field_it_category
+    - field.field.node.it_ticket.field_it_description
+    - field.field.node.it_ticket.field_it_locations
+    - field.field.node.it_ticket.field_it_status
+    - node.type.it_ticket
+  module:
+    - options
+    - text
+    - user
+id: node.it_ticket.default
+targetEntityType: node
+bundle: it_ticket
+mode: default
+content:
+  field_it_assigned:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_it_category:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_it_description:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_it_locations:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_it_status:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  links:
+    weight: 100
+hidden: {  }

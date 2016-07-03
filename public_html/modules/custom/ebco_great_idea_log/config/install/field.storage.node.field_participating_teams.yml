@@ -1,0 +1,71 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_participating_teams
+field_name: field_participating_teams
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'All WHS'
+      label: WHS
+    -
+      value: Service
+      label: Service
+    -
+      value: CustPickup
+      label: CustPickup
+    -
+      value: 'EBCO Admin'
+      label: 'EBCO Admin'
+    -
+      value: HRD
+      label: 'HR&D'
+    -
+      value: Merchandising
+      label: Merchandising
+    -
+      value: 'Visual Team'
+      label: 'Visual Team'
+    -
+      value: Phoenix
+      label: Camelback
+    -
+      value: BDStore
+      label: BDStore
+    -
+      value: Broadway
+      label: Broadway
+    -
+      value: Ina
+      label: Ina
+    -
+      value: Glendale
+      label: Glendale
+    -
+      value: Chandler
+      label: Chandler
+    -
+      value: Mesa
+      label: Mesa
+    -
+      value: Scottsdale
+      label: Scottsdale
+    -
+      value: Flagstaff
+      label: Flagstaff
+    -
+      value: Goodyear
+      label: Goodyear
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
