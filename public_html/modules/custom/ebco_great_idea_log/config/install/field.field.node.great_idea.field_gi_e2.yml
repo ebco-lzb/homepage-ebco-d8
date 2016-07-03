@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gi_e2
+    - node.type.great_idea
+id: node.great_idea.field_gi_e2
+field_name: field_gi_e2
+entity_type: node
+bundle: great_idea
+label: 'Include This Person/Dept'
+description: 'Include email address of people you wish to track the status of this idea'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

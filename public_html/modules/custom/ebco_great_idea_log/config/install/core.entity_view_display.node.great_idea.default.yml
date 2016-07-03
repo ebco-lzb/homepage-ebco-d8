@@ -1,0 +1,119 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.great_idea.field_employee_name
+    - field.field.node.great_idea.field_gi_category
+    - field.field.node.great_idea.field_gi_e1
+    - field.field.node.great_idea.field_gi_e2
+    - field.field.node.great_idea.field_gi_notes
+    - field.field.node.great_idea.field_gi_status
+    - field.field.node.great_idea.field_participating_teams
+    - field.field.node.great_idea.field_peersuppor1
+    - field.field.node.great_idea.field_peersuppor2
+    - field.field.node.great_idea.field_peersupport3
+    - field.field.node.great_idea.field_shared_team
+    - field.field.node.great_idea.field_twi_process_idea
+    - field.field.node.great_idea.field_what_is_your_email_address
+    - field.field.node.great_idea.field_what_is_your_great_idea
+    - node.type.great_idea
+  module:
+    - options
+    - text
+    - user
+id: node.great_idea.default
+targetEntityType: node
+bundle: great_idea
+mode: default
+content:
+  field_employee_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_gi_category:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_gi_e1:
+    weight: 112
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_gi_e2:
+    weight: 113
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_gi_notes:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_gi_status:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_participating_teams:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_peersuppor1:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_peersuppor2:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_peersupport3:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_shared_team:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_twi_process_idea:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_what_is_your_email_address:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_what_is_your_great_idea:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 100
+hidden: {  }

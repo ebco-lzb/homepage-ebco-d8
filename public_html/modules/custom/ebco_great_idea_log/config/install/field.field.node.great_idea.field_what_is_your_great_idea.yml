@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_is_your_great_idea
+    - node.type.great_idea
+  module:
+    - text
+id: node.great_idea.field_what_is_your_great_idea
+field_name: field_what_is_your_great_idea
+entity_type: node
+bundle: great_idea
+label: 'What is your great idea?'
+description: 'Please describe what your idea is'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

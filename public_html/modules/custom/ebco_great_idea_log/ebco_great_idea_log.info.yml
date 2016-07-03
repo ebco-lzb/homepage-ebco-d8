@@ -3,8 +3,13 @@ description: 'The Great Idea Log'
 type: module
 core: 8.x
 dependencies:
+  - field
+  - field_group
+  - menu_ui
   - node
   - options
+  - path
+  - taxonomy
   - text
   - user
   - views

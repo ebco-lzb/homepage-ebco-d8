@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_participating_teams
+    - node.type.great_idea
+  module:
+    - options
+id: node.great_idea.field_participating_teams
+field_name: field_participating_teams
+entity_type: node
+bundle: great_idea
+label: 'Originating Team '
+description: 'Please choose your store.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

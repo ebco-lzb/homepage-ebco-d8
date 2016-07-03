@@ -1,0 +1,201 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.great_idea.field_employee_name
+    - field.field.node.great_idea.field_gi_category
+    - field.field.node.great_idea.field_gi_e1
+    - field.field.node.great_idea.field_gi_e2
+    - field.field.node.great_idea.field_gi_notes
+    - field.field.node.great_idea.field_gi_status
+    - field.field.node.great_idea.field_participating_teams
+    - field.field.node.great_idea.field_peersuppor1
+    - field.field.node.great_idea.field_peersuppor2
+    - field.field.node.great_idea.field_peersupport3
+    - field.field.node.great_idea.field_shared_team
+    - field.field.node.great_idea.field_twi_process_idea
+    - field.field.node.great_idea.field_what_is_your_email_address
+    - field.field.node.great_idea.field_what_is_your_great_idea
+    - node.type.great_idea
+  module:
+    - field_group
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_peer_support:
+      children:
+        - field_peersuppor1
+        - field_peersuppor2
+        - field_peersupport3
+      parent_name: ''
+      weight: 106
+      label: 'Peer Support'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
+        effect: none
+    group_gishared:
+      children:
+        - field_shared_team
+      parent_name: ''
+      weight: 111
+      label: 'Want to use this idea?'
+      format_type: tab
+      format_settings:
+        label: 'Want to use this idea?'
+        effect: bounceslide
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_managersection:
+      children:
+        - field_gi_status
+        - field_gi_category
+        - field_twi_process_idea
+        - field_gi_e1
+        - field_gi_e2
+        - field_gi_notes
+      parent_name: ''
+      weight: 111
+      label: 'Progress Tracking Section'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
+id: node.great_idea.default
+targetEntityType: node
+bundle: great_idea
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  field_employee_name:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_gi_category:
+    weight: 113
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_gi_e1:
+    weight: 115
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_gi_e2:
+    weight: 116
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+  field_gi_notes:
+    weight: 117
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_gi_status:
+    weight: 112
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_participating_teams:
+    weight: 110
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_peersuppor1:
+    weight: 107
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_peersuppor2:
+    weight: 108
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_peersupport3:
+    weight: 109
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_shared_team:
+    weight: 111
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_twi_process_idea:
+    weight: 114
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_what_is_your_email_address:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+  field_what_is_your_great_idea:
+    weight: 31
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

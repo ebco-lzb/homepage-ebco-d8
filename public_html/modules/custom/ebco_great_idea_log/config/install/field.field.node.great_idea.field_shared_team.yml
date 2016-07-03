@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shared_team
+    - node.type.great_idea
+  module:
+    - options
+id: node.great_idea.field_shared_team
+field_name: field_shared_team
+entity_type: node
+bundle: great_idea
+label: 'Shared Team'
+description: 'Please select a team this idea is shared with and it will show up under your tabs.   If you already see other teams checked, please DO NOT un-check them.  just check your additional team and save'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
