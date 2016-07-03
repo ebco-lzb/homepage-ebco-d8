@@ -1,7 +1,8 @@
-name: 'Ebco IT Ticketing'
+name: 'Ebco IT'
 type: module
 core: 8.x
 dependencies:
+  - ebco_it_ticketing
   - field
   - field_group
   - menu_ui
