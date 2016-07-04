@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.big_top_elite_performer_nominati
+id: node.big_top_elite_performer_nominati.title
+field_name: title
+entity_type: node
+bundle: big_top_elite_performer_nominati
+label: 'Who would you like to nominate?'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
