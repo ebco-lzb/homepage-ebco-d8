@@ -2,24 +2,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_eaf_form
-    - node.type.eaf_form
+    - field.storage.node.field_it_floor_plan
+    - node.type.it_location
   module:
     - file
-id: node.eaf_form.field_eaf_form
-field_name: field_eaf_form
+id: node.it_location.field_it_floor_plan
+field_name: field_it_floor_plan
 entity_type: node
-bundle: eaf_form
-label: Form
+bundle: it_location
+label: 'Floor Plan'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: eaf/forms
+  file_directory: it-files/floor-plan
   file_extensions: pdf
-  max_filesize: '100'
+  max_filesize: ''
   description_field: false
   handler: 'default:file'
   handler_settings: {  }

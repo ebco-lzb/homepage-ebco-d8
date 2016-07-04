@@ -1,10 +1,13 @@
-name: 'Ebco IT'
+name: 'EBCO IT'
+description: 'EBCO IT Feature'
 type: module
 core: 8.x
 dependencies:
-  - ebco_it_ticketing
   - field
   - field_group
+  - file
+  - image
+  - link
   - menu_ui
   - node
   - options

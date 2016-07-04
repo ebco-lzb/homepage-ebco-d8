@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_it_network_device
+    - node.type.it_location
+  module:
+    - link
+id: node.it_location.field_it_network_device
+field_name: field_it_network_device
+entity_type: node
+bundle: it_location
+label: 'Network Device'
+description: 'Enter a link to a network enabled device supported by IT'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

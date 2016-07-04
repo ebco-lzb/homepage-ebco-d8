@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_it_address
+    - node.type.it_location
+id: node.it_location.field_it_address
+field_name: field_it_address
+entity_type: node
+bundle: it_location
+label: Address
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
