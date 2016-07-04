@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.big_top_elite_performer_winner.field_participating_teams
+    - node.type.big_top_elite_performer_winner
+  module:
+    - user
+id: node.big_top_elite_performer_winner.teaser
+targetEntityType: node
+bundle: big_top_elite_performer_winner
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_participating_teams: true

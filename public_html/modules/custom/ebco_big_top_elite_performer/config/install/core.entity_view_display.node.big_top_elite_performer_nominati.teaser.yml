@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.big_top_elite_performer_nominati.field_who_is_making_this_nominat
+    - node.type.big_top_elite_performer_nominati
+  module:
+    - user
+id: node.big_top_elite_performer_nominati.teaser
+targetEntityType: node
+bundle: big_top_elite_performer_nominati
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_who_is_making_this_nominat: true

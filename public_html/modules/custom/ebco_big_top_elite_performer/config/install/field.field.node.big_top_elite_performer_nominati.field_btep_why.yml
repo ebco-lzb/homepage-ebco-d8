@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_btep_why
+    - node.type.big_top_elite_performer_nominati
+  module:
+    - text
+id: node.big_top_elite_performer_nominati.field_btep_why
+field_name: field_btep_why
+entity_type: node
+bundle: big_top_elite_performer_nominati
+label: Why
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

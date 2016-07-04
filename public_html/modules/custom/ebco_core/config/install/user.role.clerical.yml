@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: clerical
+label: Clerical
+weight: 5
+is_admin: null
+permissions: {  }

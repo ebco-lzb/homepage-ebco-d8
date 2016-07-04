@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_who_is_making_this_nominat
+    - node.type.big_top_elite_performer_nominati
+id: node.big_top_elite_performer_nominati.field_who_is_making_this_nominat
+field_name: field_who_is_making_this_nominat
+entity_type: node
+bundle: big_top_elite_performer_nominati
+label: 'Who is making this nomination?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

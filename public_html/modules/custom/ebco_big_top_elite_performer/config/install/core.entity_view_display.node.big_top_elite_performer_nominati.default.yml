@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.big_top_elite_performer_nominati.field_btep_why
+    - field.field.node.big_top_elite_performer_nominati.field_who_is_making_this_nominat
+    - node.type.big_top_elite_performer_nominati
+  module:
+    - text
+    - user
+id: node.big_top_elite_performer_nominati.default
+targetEntityType: node
+bundle: big_top_elite_performer_nominati
+mode: default
+content:
+  field_btep_why:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_who_is_making_this_nominat:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+hidden: {  }

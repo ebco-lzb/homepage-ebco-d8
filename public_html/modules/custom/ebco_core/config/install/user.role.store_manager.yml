@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: store_manager
+label: 'Store Manager'
+weight: 11
+is_admin: null
+permissions: {  }

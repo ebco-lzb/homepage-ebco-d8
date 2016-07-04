@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.it_location.field_it_floor_plan
     - field.field.node.it_location.field_it_network_device
     - field.field.node.it_location.field_it_wire_closet
+    - image.style.medium
     - node.type.it_location
   module:
     - file
@@ -45,10 +46,12 @@ content:
     weight: 104
     label: above
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: medium
+      image_link: file
     third_party_settings: {  }
     type: image
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

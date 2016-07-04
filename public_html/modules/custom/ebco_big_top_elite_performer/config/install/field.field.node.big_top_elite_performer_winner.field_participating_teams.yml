@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_participating_teams
+    - node.type.big_top_elite_performer_winner
+  module:
+    - options
+id: node.big_top_elite_performer_winner.field_participating_teams
+field_name: field_participating_teams
+entity_type: node
+bundle: big_top_elite_performer_winner
+label: Location
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

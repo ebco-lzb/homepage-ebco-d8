@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Big Top Elite Performer Nomination'
+type: big_top_elite_performer_nominati
+description: 'Nominate Someone'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

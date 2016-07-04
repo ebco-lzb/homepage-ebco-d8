@@ -1,0 +1,16 @@
+name: 'EBCO Big Top Elite Performer'
+description: 'EBCO Big Top Elite Performer'
+type: module
+core: 8.x
+dependencies:
+  - datetime
+  - ebco_great_idea_log
+  - field
+  - menu_ui
+  - node
+  - options
+  - path
+  - text
+  - user
+version: 8.x-1.0
+package: EBCO

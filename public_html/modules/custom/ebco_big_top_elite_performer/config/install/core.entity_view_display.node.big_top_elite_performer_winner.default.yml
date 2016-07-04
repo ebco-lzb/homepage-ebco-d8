@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.big_top_elite_performer_winner.field_btepw_date
+    - field.field.node.big_top_elite_performer_winner.field_participating_teams
+    - node.type.big_top_elite_performer_winner
+  module:
+    - datetime
+    - options
+    - user
+id: node.big_top_elite_performer_winner.default
+targetEntityType: node
+bundle: big_top_elite_performer_winner
+mode: default
+content:
+  field_btepw_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_participating_teams:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  links:
+    weight: 100
+hidden: {  }
