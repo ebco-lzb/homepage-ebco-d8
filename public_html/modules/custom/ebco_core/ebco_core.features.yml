@@ -23,6 +23,8 @@ excluded:
   - field.storage.eform_submission.field_your_email
   - field.storage.node.field_image
   - field.storage.node.field_tags
+  - field.storage.node.field_bonus_goal
+  - field.storage.node.field_goal
   - block.block.greatidea
   - system.menu.great-idea
   - user.role.eaf

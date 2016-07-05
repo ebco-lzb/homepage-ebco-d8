@@ -1,0 +1,4 @@
+bundle: ebco
+excluded:
+  - field.storage.node.field_goal
+required: true

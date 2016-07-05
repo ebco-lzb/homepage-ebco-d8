@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'EBCO Goal'
+type: ebco_goal
+description: 'This is were you would put EBCO''s GOAL and Bonus Goal'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
