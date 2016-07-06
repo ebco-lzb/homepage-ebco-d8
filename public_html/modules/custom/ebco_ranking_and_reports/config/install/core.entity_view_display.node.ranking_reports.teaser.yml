@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.ranking_reports
+  module:
+    - user
+id: node.ranking_reports.teaser
+targetEntityType: node
+bundle: ranking_reports
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

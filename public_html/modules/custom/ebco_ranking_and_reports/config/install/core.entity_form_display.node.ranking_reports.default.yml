@@ -1,0 +1,97 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ranking_reports.field_rank_report_file
+    - field.field.node.ranking_reports.field_report_category_month
+    - field.field.node.ranking_reports.field_report_category_year
+    - node.type.ranking_reports
+  module:
+    - field_group
+    - file
+    - path
+third_party_settings:
+  field_group:
+    group_monthlyreports:
+      children:
+        - field_report_category_month
+      parent_name: ''
+      weight: 1
+      label: ' Monthly & Weekly Reports'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
+    group_yeartodate:
+      children:
+        - field_rank_report_file
+      parent_name: ''
+      weight: 2
+      label: 'Year To Date'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
+id: node.ranking_reports.default
+targetEntityType: node
+bundle: ranking_reports
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+  field_rank_report_file:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_report_category_month:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_report_category_year:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  path:
+    type: path
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

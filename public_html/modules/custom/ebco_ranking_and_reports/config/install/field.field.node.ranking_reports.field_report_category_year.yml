@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_category_year
+    - node.type.ranking_reports
+  module:
+    - options
+id: node.ranking_reports.field_report_category_year
+field_name: field_report_category_year
+entity_type: node
+bundle: ranking_reports
+label: 'Report Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
