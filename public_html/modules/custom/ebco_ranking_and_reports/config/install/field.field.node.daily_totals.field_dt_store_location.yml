@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dt_store_location
+    - node.type.daily_totals
+    - taxonomy.vocabulary.store_locations
+id: node.daily_totals.field_dt_store_location
+field_name: field_dt_store_location
+entity_type: node
+bundle: daily_totals
+label: 'Store Location'
+description: 'Please choose your store'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      store_locations: store_locations
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
