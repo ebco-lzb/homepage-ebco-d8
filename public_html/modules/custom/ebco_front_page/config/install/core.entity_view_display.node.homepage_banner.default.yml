@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_banner.field_banner
+    - node.type.homepage_banner
+  module:
+    - image
+    - user
+id: node.homepage_banner.default
+targetEntityType: node
+bundle: homepage_banner
+mode: default
+content:
+  field_banner:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 100
+hidden: {  }

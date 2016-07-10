@@ -1,0 +1,23 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.great-idea
+  module:
+    - system
+  theme:
+    - integrity
+id: integrity_greatidea
+theme: integrity
+region: '-1'
+weight: -7
+provider: null
+plugin: 'system_menu_block:great-idea'
+settings:
+  id: 'system_menu_block:great-idea'
+  label: 'Great Idea'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

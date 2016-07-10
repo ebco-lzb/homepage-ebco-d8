@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_form_type
+    - node.type.forms
+  module:
+    - options
+id: node.forms.field_form_type
+field_name: field_form_type
+entity_type: node
+bundle: forms
+label: 'Form Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

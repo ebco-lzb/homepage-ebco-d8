@@ -25,7 +25,6 @@ excluded:
   - field.storage.node.field_tags
   - field.storage.node.field_bonus_goal
   - field.storage.node.field_goal
-  - block.block.greatidea
   - system.menu.great-idea
   - user.role.eaf
 required: true

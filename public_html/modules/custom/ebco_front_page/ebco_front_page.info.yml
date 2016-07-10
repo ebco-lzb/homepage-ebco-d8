@@ -1,18 +1,15 @@
-name: 'EBCO Forms'
-description: 'Feature for EBCO''s Forms'
+name: 'EBCO Front Page'
+description: 'EBCO Front Page Items'
 type: module
 core: 8.x
 dependencies:
-  - eform
-  - features
+  - block
   - field
   - file
+  - image
   - menu_ui
   - node
-  - options
   - path
-  - system
-  - text
   - user
   - views
 version: 8.x-1.0

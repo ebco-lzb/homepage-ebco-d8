@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.homepage_banner
+  module:
+    - user
+id: node.homepage_banner.teaser
+targetEntityType: node
+bundle: homepage_banner
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

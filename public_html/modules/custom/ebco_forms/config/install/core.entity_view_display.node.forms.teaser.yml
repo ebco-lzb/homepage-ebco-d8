@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.forms.field_form_type
+    - node.type.forms
+  module:
+    - user
+id: node.forms.teaser
+targetEntityType: node
+bundle: forms
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_form_type: true

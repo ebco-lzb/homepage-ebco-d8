@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.forms.field_form_file
+    - field.field.node.forms.field_form_type
+    - node.type.forms
+  module:
+    - file
+    - options
+    - user
+id: node.forms.default
+targetEntityType: node
+bundle: forms
+mode: default
+content:
+  field_form_file:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_form_type:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  links:
+    weight: 100
+hidden: {  }

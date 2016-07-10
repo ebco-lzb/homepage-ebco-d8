@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_form_file
+    - node.type.forms
+  module:
+    - file
+id: node.forms.field_form_file
+field_name: field_form_file
+entity_type: node
+bundle: forms
+label: Form
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: forms
+  file_extensions: 'txt pdf doc docx xls xlsx rtf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

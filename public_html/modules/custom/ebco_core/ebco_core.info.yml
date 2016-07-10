@@ -15,6 +15,7 @@ dependencies:
   - filter
   - image
   - menu_link_content
+  - menu_ui
   - node
   - path
   - rdf
