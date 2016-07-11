@@ -735,3 +735,31 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = "sites/default/files/config_$config_hash/sync";
+//$config_directories['sync'] = 'sites/default/files/config_yRWHqc5d9JhZWaJV0HUW2A3ZBDkYOCasQoFxl5dG1e-pWxfA0Wv_l23aja3rQrTfZaWqnadbGw/sync';
+
+
+/**
+Trusted Hosts
+*/
+$settings['trusted_host_patterns'] = array(
+  '^local\.dev\.homepage\.com$',
+  '^homepage\.la-z-boyaz\.com$',
+);
+
+
+// Memcache Settings.
+// Set memcache server.
+$conf['memcache_servers'] = array(
+  '127.0.0.1:11211' => 'default',
+);
+// Set memcache bins.
+$conf['memcache_bins'] = array(
+  'cache' => 'default',
+  'cache_form' => 'default',
+  'cache_filter' => 'default',
+);
+// Set memcache prefix to be the location of the settings.php file.
+$conf['memcache_key_prefix'] = 'homepage_az_d8';
+// Try to use a persistent connection.
+$conf['memcache_persistent'] = TRUE;
+
