@@ -735,7 +735,6 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = "sites/default/files/config_$config_hash/sync";
-//$config_directories['sync'] = 'sites/default/files/config_yRWHqc5d9JhZWaJV0HUW2A3ZBDkYOCasQoFxl5dG1e-pWxfA0Wv_l23aja3rQrTfZaWqnadbGw/sync';
 
 
 /**
