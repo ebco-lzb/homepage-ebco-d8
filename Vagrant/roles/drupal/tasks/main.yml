@@ -39,3 +39,5 @@
     command: /usr/local/bin/link.sh
     become: true
     become_user: root
+
+  - cron: name="Drupal Cron" minute="0" hour="*/10" job="drush @vagrant.homepage core-cron > /dev/null"
