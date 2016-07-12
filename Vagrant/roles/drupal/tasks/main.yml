@@ -31,3 +31,11 @@
     command: /usr/local/bin/drush_install.sh
     become: true
     become_user: root
+
+  - name: Link settings.php Script
+    copy: src=link.sh dest=/usr/local/bin owner=root group=root mode=0777
+
+  - name: Link settings.php
+    command: /usr/local/bin/link.sh
+    become: true
+    become_user: root

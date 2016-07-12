@@ -37,7 +37,33 @@
       - php70w-mcrypt
       - composer
       - git
+      - php-pear
+      - memcached
+      - zlib-devel
+      - libmemcached-devel
 
   - name: Installing custom php.ini
     when: phpinstalled|success
     copy: src=php.ini dest=/etc/php.ini
+
+  - name: Memcached php extension install script
+    copy: src=roles/php/templates/memcache.sh dest=/usr/local/bin owner=root group=root mode=0777
+
+  - name: Install Memcache php extension
+    command: /usr/local/bin/memcache.sh
+    become: true
+    become_user: root
+
+  - name: upload progress php extension install script
+    copy: src=roles/php/templates/uploadprogress.sh dest=/usr/local/bin owner=root group=root mode=0777
+
+  - name: Install upload progress php extension
+    command: /usr/local/bin/uploadprogress.sh
+    become: true
+    become_user: root
+
+  - name: Ensure Memcached is started
+    service: name=memcached state=started enabled=yes
+
+  - name: Ensure Apache is reloaded
+    service: name=httpd state=reloaded enabled=yes

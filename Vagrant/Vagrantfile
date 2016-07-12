@@ -21,8 +21,9 @@ config.vm.provider "virtualbox" do |vb|
   config.vm.network :private_network, ip: "10.220.220.10"
   config.vm.network :forwarded_port, guest: 80, host: 8881
   config.vm.network :forwarded_port, guest: 443, host: 8443
-  config.vm.synced_folder "public_html","/var/www/public_html",create:true
+  config.vm.synced_folder "../public_html","/var/www/public_html",create:true
   config.vm.synced_folder "db/","/tmp/db",create:true
+  config.vm.synced_folder "../config","/var/www/config",create:true
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "playbook.yml"
   end
