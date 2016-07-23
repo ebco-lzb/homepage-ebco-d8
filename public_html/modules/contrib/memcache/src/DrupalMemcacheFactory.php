@@ -32,7 +32,7 @@ class DrupalMemcacheFactory {
   protected $memcachePersistent;
 
   /**
-   * @var array
+   * @var \Drupal\memcache\DrupalMemcacheInterface[]
    */
   protected $memcacheCache = array();
 
@@ -52,7 +52,9 @@ class DrupalMemcacheFactory {
   protected $failedConnectionCache = array();
 
   /**
+   * Constructs a DrupalMemcacheFactory object.
    *
+   * @param \Drupal\memcache\DrupalMemcacheConfig $settings
    */
   public function __construct(DrupalMemcacheConfig $settings) {
     $this->settings = $settings;
@@ -74,7 +76,7 @@ class DrupalMemcacheFactory {
    */
   public function get($bin = NULL, $flush = FALSE) {
     if ($flush) {
-      $this->memcacheFlush();
+      $this->flush();
     }
 
     if (empty($this->memcacheCache) || empty($this->memcacheCache[$bin])) {
@@ -132,6 +134,9 @@ class DrupalMemcacheFactory {
             }
           }
         }
+        else {
+          throw new MemcacheException('Memcache instance could not be initialized. Check memcache is running and reachable');
+        }
       }
     }
 
@@ -157,6 +162,9 @@ class DrupalMemcacheFactory {
     elseif (class_exists('Memcached')) {
       $this->extension = 'Memcached';
     }
+    else {
+      throw new MemcacheException('No Memcache extension found');
+    }
 
     // Values from settings.php
     $this->memcacheServers = $this->settings->get('servers', ['127.0.0.1:11211' => 'default']);
@@ -170,11 +178,11 @@ class DrupalMemcacheFactory {
   }
 
   /**
-   * Flushes the memcache bin/server/cache mappings.
+   * Flushes the memcache bin/server/cache mappings and closes connections.
    */
-  protected function memcacheFlush() {
+  protected function flush() {
     foreach ($this->memcacheCache as $cluster) {
-      memcache_close($cluster);
+      $cluster->close();
     }
 
     $this->memcacheCache = array();

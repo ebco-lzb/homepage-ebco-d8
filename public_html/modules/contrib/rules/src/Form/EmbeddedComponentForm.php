@@ -1,11 +1,7 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\rules\Form\EmbeddedComponentForm.
- */
-
 namespace Drupal\rules\Form;
+
 use Drupal\Core\Form\FormInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\rules\Ui\RulesUiHandlerInterface;

@@ -116,9 +116,18 @@ class MemcacheBackend implements CacheBackendInterface {
   }
 
   /**
-   * {@inheritdoc}
+   * Determines if the cache item is valid.
+   *
+   * This also alters the valid property of the cache item itself.
+   *
+   * @param string $cid
+   *   The cache ID.
+   * @param \stdClass $cache
+   *   The cache item.
+   *
+   * @return bool
    */
-  protected function valid($cid, $cache) {
+  protected function valid($cid, \stdClass $cache) {
     $lock_key = "memcache_$cid:$this->bin";
     $cache->valid = FALSE;
 
@@ -131,7 +140,7 @@ class MemcacheBackend implements CacheBackendInterface {
         if ($this->settings->get('stampede_protection', FALSE)) {
           // The process that acquires the lock will get a cache miss, all
           // others will get a cache hit.
-          if (!$this->lock->acquire($lock_key, $this->settings->get('memcache_stampede_semaphore', 15))) {
+          if (!$this->lock->acquire($lock_key, $this->settings->get('stampede_semaphore', 15))) {
             $cache->valid = TRUE;
           }
         }

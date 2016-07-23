@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-DUMPFILE="/tmp/db/homepage.sql.bz2"
+DUMPFILE="/tmp/db/homepage_sql.gz"
 
 # check for dump file
 if [ ! -f $DUMPFILE ]; then
@@ -29,7 +29,8 @@ fi
 
 # import the db
 
-bzcat ${DUMPFILE} | mysql ${DB}; $ERR=$?;
+zcat ${DUMPFILE} | mysql ${DB}; $ERR=$?;
+
 
 if [ $ERR -ne 0 ]; then
   echo "Error importing database: $ERR";

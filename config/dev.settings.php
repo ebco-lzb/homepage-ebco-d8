@@ -748,17 +748,22 @@ $settings['trusted_host_patterns'] = array(
 
 // Memcache Settings.
 // Set memcache server.
-$conf['memcache_servers'] = array(
+$settings['memcache_storage']['extension'] = 'Memcache';
+
+$settings['memcache_storage']['memcached_servers'] = [
   '127.0.0.1:11211' => 'default',
-);
-// Set memcache bins.
-$conf['memcache_bins'] = array(
-  'cache' => 'default',
+];
+
+$settings['memcache_storage']['bins_clusters'] = [
+  'cache_page' => 'default',
+  'cache_render' => 'default',
+  'cache_bootstrap' => 'default',
   'cache_form' => 'default',
   'cache_filter' => 'default',
-);
-// Set memcache prefix to be the location of the settings.php file.
-$conf['memcache_key_prefix'] = 'homepage_az_d8';
-// Try to use a persistent connection.
-$conf['memcache_persistent'] = TRUE;
 
+];
+
+// Set memcache prefix to be the location of the settings.php file.
+$settings['memcache_storage']['key_prefix'] = 'homepage_az_d8';
+
+$settings['memcache_storage']['debug'] = TRUE;
