@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.market_suggestions.field_employee_name
+    - node.type.market_suggestions
+  module:
+    - user
+id: node.market_suggestions.default
+targetEntityType: node
+bundle: market_suggestions
+mode: default
+content:
+  field_employee_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+hidden: {  }

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gi_e1
+    - node.type.great_idea
+  module:
+    - options
+id: node.great_idea.field_gi_e1
+field_name: field_gi_e1
+entity_type: node
+bundle: great_idea
+label: 'Include This Person/Dept'
+description: 'Include some of the more frequently contacted people'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+name: 'EBCO Ranking and Reports'
+description: 'EBCO Ranking and Reports Feature'
+type: module
+core: 8.x
+dependencies:
+  - datetime
+  - ebco_great_idea_log
+  - ebco_ranking_and_reports
+  - field
+  - field_group
+  - file
+  - menu_ui
+  - node
+  - options
+  - path
+  - taxonomy
+  - user
+  - views
+version: 8.x-1.0

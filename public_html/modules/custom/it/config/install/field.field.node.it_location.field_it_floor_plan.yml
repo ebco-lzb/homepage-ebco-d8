@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_it_floor_plan
+    - node.type.it_location
+  module:
+    - file
+id: node.it_location.field_it_floor_plan
+field_name: field_it_floor_plan
+entity_type: node
+bundle: it_location
+label: 'Floor Plan'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: it-files/floor-plan
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

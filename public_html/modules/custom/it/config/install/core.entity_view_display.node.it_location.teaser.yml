@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.it_location.field_it_address
+    - field.field.node.it_location.field_it_floor_plan
+    - field.field.node.it_location.field_it_network_device
+    - field.field.node.it_location.field_it_wire_closet
+    - node.type.it_location
+  module:
+    - user
+id: node.it_location.teaser
+targetEntityType: node
+bundle: it_location
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_it_address: true
+  field_it_floor_plan: true
+  field_it_network_device: true
+  field_it_wire_closet: true

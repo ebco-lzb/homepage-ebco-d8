@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_shared_team
+field_name: field_shared_team
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'All WHS'
+      label: 'All WHS'
+    -
+      value: 'EBCO Admin'
+      label: 'EBCO Admin'
+    -
+      value: Camelback
+      label: Camelback
+    -
+      value: BDStore
+      label: BDStore
+    -
+      value: Broadway
+      label: Broadway
+    -
+      value: Ina
+      label: Ina
+    -
+      value: Glendale
+      label: Glendale
+    -
+      value: Chandler
+      label: Chandler
+    -
+      value: Mesa
+      label: Mesa
+    -
+      value: Scottsdale
+      label: Scottsdale
+    -
+      value: Flagstaff
+      label: Flagstaff
+    -
+      value: Goodyear
+      label: Goodyear
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

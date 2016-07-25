@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_peersuppor1
+    - node.type.great_idea
+id: node.great_idea.field_peersuppor1
+field_name: field_peersuppor1
+entity_type: node
+bundle: great_idea
+label: '1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

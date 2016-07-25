@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: it-department
+label: 'IT Department'
+description: ''
+locked: false

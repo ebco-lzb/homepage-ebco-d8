@@ -1,0 +1,19 @@
+name: 'EBCO Great Idea Log'
+description: 'The Great Idea Log'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - ebco_great_idea_log
+  - field
+  - field_group
+  - menu_ui
+  - node
+  - options
+  - path
+  - system
+  - taxonomy
+  - text
+  - user
+  - views
+version: 8.x-1.0

@@ -1,0 +1,92 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_gi_e1
+field_name: field_gi_e1
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: leancaptains@lazboyaz.com
+      label: 'Lean Captains'
+    -
+      value: support@lazboyaz.com
+      label: 'IT Dept'
+    -
+      value: mcgirrl@lazboyaz.com
+      label: 'Laura Mcgirr'
+    -
+      value: smithb@lazboyaz.com
+      label: 'Bernie Smith'
+    -
+      value: serbusr@lazboyaz.com
+      label: 'Randy Serbus'
+    -
+      value: mortone@lazboyaz.com
+      label: 'Elyn Morton'
+    -
+      value: tillk@lazboyaz.com
+      label: 'Kathy Till'
+    -
+      value: nealf@lazboyaz.com
+      label: 'Frank Neal'
+    -
+      value: pasinskij@lazboyaz.com
+      label: 'Joel Pasinski'
+    -
+      value: batesc@lazboyaz.com
+      label: 'Chris bates'
+    -
+      value: chandosj@lazboyaz.com
+      label: 'Jennifer Chandos'
+    -
+      value: colemanj@lazboyaz.com
+      label: 'Julie Coleman'
+    -
+      value: breunige@lazboyaz.com
+      label: 'Ed III'
+    -
+      value: morrisonj@lazboyaz.com
+      label: 'Camelback Manager'
+    -
+      value: barryj@lazboyaz.com
+      label: 'Broadway Manager'
+    -
+      value: harcusc@lazboyaz.com
+      label: 'Ina Manager'
+    -
+      value: olesonr@lazboyaz.com
+      label: 'Glendale Manager'
+    -
+      value: bennettr@lazboyaz.com
+      label: 'Chandler Manager'
+    -
+      value: burkek@lazboyaz.com
+      label: 'Mesa Manager'
+    -
+      value: shober@lazboyaz.com
+      label: 'Scottsdale Manager'
+    -
+      value: hunters@lazboyaz.com
+      label: 'Flagstaff Manager'
+    -
+      value: roadiferk@lazboyaz.com
+      label: 'Goodyear Manager'
+    -
+      value: proeberl@lazboyaz.com
+      label: 'BD Manager'
+    -
+      value: stylemeetscomfort@lazboyaz.com
+      label: 'Style Meets Comfort'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

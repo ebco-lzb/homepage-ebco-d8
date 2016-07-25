@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eaf_form
+    - node.type.eaf_form
+  module:
+    - file
+id: node.eaf_form.field_eaf_form
+field_name: field_eaf_form
+entity_type: node
+bundle: eaf_form
+label: Form
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: eaf/forms
+  file_extensions: pdf
+  max_filesize: '100'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

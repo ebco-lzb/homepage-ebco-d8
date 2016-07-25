@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hof_manager
+    - node.type.ebco_hall_of_fame
+id: node.ebco_hall_of_fame.field_hof_manager
+field_name: field_hof_manager
+entity_type: node
+bundle: ebco_hall_of_fame
+label: Manager
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

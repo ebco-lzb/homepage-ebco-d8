@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'IT Locations'
+vid: it_locations
+description: 'All locations supported by IT'
+hierarchy: 1
+weight: 0

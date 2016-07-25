@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ranking_reports.field_rank_report_file
+    - field.field.node.ranking_reports.field_report_category_month
+    - field.field.node.ranking_reports.field_report_category_year
+    - node.type.ranking_reports
+  module:
+    - file
+    - options
+    - user
+id: node.ranking_reports.default
+targetEntityType: node
+bundle: ranking_reports
+mode: default
+content:
+  field_rank_report_file:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_report_category_month:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_report_category_year:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  links:
+    weight: 100
+hidden: {  }

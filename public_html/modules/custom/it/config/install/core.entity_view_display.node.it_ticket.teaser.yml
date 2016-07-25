@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.it_ticket.field_it_assigned
+    - field.field.node.it_ticket.field_it_description
+    - field.field.node.it_ticket.field_it_locations
+    - field.field.node.it_ticket.field_it_status
+    - node.type.it_ticket
+  module:
+    - user
+id: node.it_ticket.teaser
+targetEntityType: node
+bundle: it_ticket
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_it_assigned: true
+  field_it_description: true
+  field_it_locations: true
+  field_it_status: true

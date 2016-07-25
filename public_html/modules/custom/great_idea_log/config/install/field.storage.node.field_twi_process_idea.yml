@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_twi_process_idea
+field_name: field_twi_process_idea
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: TWI-Opening
+      label: TWI-Opening
+    -
+      value: 'TWI-Developing the client needs'
+      label: 'TWI-Developing the client needs'
+    -
+      value: TWI-Showtime
+      label: TWI-Showtime
+    -
+      value: TWI-Close
+      label: TWI-Close
+    -
+      value: 'TWI-What Is Next'
+      label: 'TWI-What Is Next'
+    -
+      value: 'TWI-Operations and Spreadsheets'
+      label: 'TWI-Operations and Spreadsheets'
+    -
+      value: 'Target State-Average Ticket'
+      label: 'Target State-Average Ticket'
+    -
+      value: 'Target State-In-Homes'
+      label: 'Target State-In-Homes'
+    -
+      value: 'Target State-Close Rate'
+      label: 'Target State-Close Rate'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

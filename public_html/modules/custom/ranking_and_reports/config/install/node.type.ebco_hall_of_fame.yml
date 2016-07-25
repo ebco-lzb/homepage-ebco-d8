@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'EBCO Hall of Fame'
+type: ebco_hall_of_fame
+description: 'Also known as the Big Board this is were you would post a record breaking number'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

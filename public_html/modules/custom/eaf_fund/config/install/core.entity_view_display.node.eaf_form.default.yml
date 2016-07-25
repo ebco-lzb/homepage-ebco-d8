@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.eaf_form.field_eaf_form
+    - node.type.eaf_form
+  module:
+    - file
+    - user
+id: node.eaf_form.default
+targetEntityType: node
+bundle: eaf_form
+mode: default
+content:
+  field_eaf_form:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  links:
+    weight: 100
+hidden: {  }

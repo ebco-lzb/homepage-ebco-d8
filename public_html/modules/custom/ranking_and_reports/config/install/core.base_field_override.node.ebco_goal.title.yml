@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ebco_goal
+id: node.ebco_goal.title
+field_name: title
+entity_type: node
+bundle: ebco_goal
+label: 'Month and Year'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

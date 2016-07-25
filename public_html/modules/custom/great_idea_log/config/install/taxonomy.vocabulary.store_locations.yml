@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Store Locations'
+vid: store_locations
+description: 'All EBCO Store Locations'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_gi_status
+field_name: field_gi_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'In Progress'
+      label: 'In Progress'
+    -
+      value: Open
+      label: Open
+    -
+      value: 'R&D Phase'
+      label: 'R&D Phase'
+    -
+      value: Dropped
+      label: Dropped
+    -
+      value: Testing
+      label: Testing
+    -
+      value: Implemented
+      label: Implemented
+    -
+      value: Parked
+      label: Parked
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

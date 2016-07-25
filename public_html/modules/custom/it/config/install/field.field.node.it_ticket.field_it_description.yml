@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_it_description
+    - node.type.it_ticket
+  module:
+    - text
+id: node.it_ticket.field_it_description
+field_name: field_it_description
+entity_type: node
+bundle: it_ticket
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

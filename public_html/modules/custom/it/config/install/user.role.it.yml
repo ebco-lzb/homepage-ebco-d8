@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: it
+label: IT
+weight: 9
+is_admin: null
+permissions: {  }

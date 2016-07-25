@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hof_year_of_record
+    - node.type.ebco_hall_of_fame
+  module:
+    - datetime
+id: node.ebco_hall_of_fame.field_hof_year_of_record
+field_name: field_hof_year_of_record
+entity_type: node
+bundle: ebco_hall_of_fame
+label: 'Year of Record'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

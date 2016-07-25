@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ebco_hall_of_fame.field_hof_volume
+    - field.field.node.ebco_hall_of_fame.field_hof_year_of_record
+    - node.type.ebco_hall_of_fame
+  module:
+    - user
+id: node.ebco_hall_of_fame.teaser
+targetEntityType: node
+bundle: ebco_hall_of_fame
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_hof_volume: true
+  field_hof_year_of_record: true

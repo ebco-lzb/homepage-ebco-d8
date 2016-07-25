@@ -1,0 +1,22 @@
+name: 'EBCO IT'
+description: 'EBCO IT Feature'
+type: module
+core: 8.x
+dependencies:
+  - ebco_core
+  - ebco_it
+  - field
+  - field_group
+  - file
+  - image
+  - link
+  - menu_ui
+  - node
+  - options
+  - path
+  - system
+  - taxonomy
+  - text
+  - user
+  - views
+version: 8.x-1.0

@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ebco_hall_of_fame.field_hof_manager
+    - field.field.node.ebco_hall_of_fame.field_hof_month_of_record
+    - field.field.node.ebco_hall_of_fame.field_hof_volume
+    - field.field.node.ebco_hall_of_fame.field_hof_year_of_record
+    - node.type.ebco_hall_of_fame
+  module:
+    - datetime
+    - options
+    - user
+id: node.ebco_hall_of_fame.default
+targetEntityType: node
+bundle: ebco_hall_of_fame
+mode: default
+content:
+  field_hof_manager:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_hof_month_of_record:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_hof_volume:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_hof_year_of_record:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  links:
+    weight: 100
+hidden: {  }

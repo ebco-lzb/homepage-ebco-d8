@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gi_category
+    - node.type.great_idea
+  module:
+    - options
+id: node.great_idea.field_gi_category
+field_name: field_gi_category
+entity_type: node
+bundle: great_idea
+label: 'Category (Optional)'
+description: 'Choosing this setting will remove this idea from general list of ideas and place it in its own category.  It will also send out a email to the creator of the idea telling them of this. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

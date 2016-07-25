@@ -1,0 +1,14 @@
+name: 'EBCO EAF Fund'
+description: 'EBCO EAF Fund Feature'
+type: module
+core: 8.x
+dependencies:
+  - ebco_eaf_fund
+  - field
+  - file
+  - menu_ui
+  - node
+  - path
+  - user
+  - views
+version: 8.x-1.0

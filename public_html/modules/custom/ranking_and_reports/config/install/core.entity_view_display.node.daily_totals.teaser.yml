@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.daily_totals
+  module:
+    - user
+id: node.daily_totals.teaser
+targetEntityType: node
+bundle: daily_totals
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }
