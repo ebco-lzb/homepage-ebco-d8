@@ -5,8 +5,8 @@ package: Testing
 type: module
 hidden: true
 
-# Information added by Drupal.org packaging script on 2016-06-30
+# Information added by Drupal.org packaging script on 2016-07-21
 version: '8.x-3.x-dev'
 core: '8.x'
 project: 'feeds'
-datestamp: 1467273847
+datestamp: 1469078048
