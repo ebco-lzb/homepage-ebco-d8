@@ -41,4 +41,4 @@
 
   - name: Import ConnectDB
     when: dbstatus.stdout.find('vagrant') == -1
-    mysql_db: name=vagrant state=import target=/tmp/db/homepage_sql.bz2
+    mysql_db: name=vagrant state=import target=/tmp/db/homepage_sql.gz
