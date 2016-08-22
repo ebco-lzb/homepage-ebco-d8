@@ -1,0 +1,10 @@
+---
+  - name: Install pip
+    register: pip
+    yum: name={{ item }} update_cache=yes state=latest
+    with_items:
+      - python-pip
+
+  - name: Install AWS CLI
+    shell: pip install awscli
+    register: aws_cli
