@@ -25,6 +25,10 @@ config.vm.provider "virtualbox" do |vb|
   config.vm.synced_folder "db/","/tmp/db",create:true
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "playbook.yml"
+    ansible.extra_vars = {
+      aws_key: "TYPE_AWS_KEY_HERE",
+      aws_secret: "TYPE_AWS_SECRET_HERE",
+}
   end
 
   config.ssh.insert_key = false

@@ -39,6 +39,14 @@
 #    copy: src=homepage_sql.bz2 dest=/tmp/
 #    register: vagrantdbcopied
 
+  - name: Copy refresh_db.sh database script
+    copy: src=refresh_db.sh dest=/usr/local/bin owner=root group=root mode=0777
+
+  - name: Pull Latest Production Database
+    command: /usr/local/bin/refresh_db.sh
+    become: true
+    become_user: root
+
   - name: Import ConnectDB
     when: dbstatus.stdout.find('vagrant') == -1
     mysql_db: name=vagrant state=import target=/tmp/db/homepage_sql.gz

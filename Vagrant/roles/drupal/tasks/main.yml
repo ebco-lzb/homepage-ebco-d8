@@ -35,9 +35,6 @@
   - name: Link settings.php Script
     copy: src=link.sh dest=/usr/local/bin owner=root group=root mode=0777
 
-  - name: Copy refres_db.sh database script
-    copy: src=refresh_db.sh dest=/usr/local/bin owner=root group=root mode=0777
-
   - name: Links
     command: /usr/local/bin/link.sh
     become: true

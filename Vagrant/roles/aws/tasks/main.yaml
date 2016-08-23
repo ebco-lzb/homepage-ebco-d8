@@ -8,3 +8,11 @@
   - name: Install AWS CLI
     shell: pip install awscli
     register: aws_cli
+
+  - name: AWS Credentials
+    copy: src=aws_creds.sh dest=/usr/local/bin owner=root group=root mode=0777
+
+  - name: Aws Creds Run
+    command: /usr/local/bin/aws_creds.sh {{ aws_key }} {{ aws_secret }}
+    become: true
+    become_user: root
