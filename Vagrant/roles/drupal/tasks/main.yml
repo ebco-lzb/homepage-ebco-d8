@@ -6,8 +6,8 @@
 #     - mariadb-server
 #    register: mariadbinstalled
 
-  - name: Creating /home/vagrant/.drush
-    file: path=/home/vagrant/.drush/ state=directory owner=vagrant group=vagrant
+  - name: Creating /etc/drush
+    file: path=/etc/drush state=directory owner=vagrant group=vagrant
     register: drushdir_exists
 
   - name: Creating tmp dir
@@ -15,7 +15,7 @@
     register: tmp
 
   - name: Drupal -- Copying Drush Alias
-    copy: src=drush_alias dest=/home/vagrant/.drush/aliases.drushrc.php owner=vagrant group=vagrant
+    copy: src=drush_alias dest=/etc/drush/aliases.drushrc.php owner=vagrant group=vagrant
     when: drushdir_exists|success
 
   - name: Drupal -- Copying /etc/hosts
@@ -34,6 +34,9 @@
 
   - name: Link settings.php Script
     copy: src=link.sh dest=/usr/local/bin owner=root group=root mode=0777
+
+  - name: Copy import_db script
+    copy: src=import_db.sh dest=/usr/local/bin owner=root group=root mode=0777
 
   - name: Links
     command: /usr/local/bin/link.sh

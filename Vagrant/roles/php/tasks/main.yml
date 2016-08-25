@@ -41,6 +41,8 @@
       - memcached
       - zlib-devel
       - libmemcached-devel
+      - pv
+      - gcc
 
   - name: Installing custom php.ini
     when: phpinstalled|success
