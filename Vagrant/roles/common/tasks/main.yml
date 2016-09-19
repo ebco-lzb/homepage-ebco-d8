@@ -16,3 +16,5 @@
       name: '*'
       state: latest
     when: epel_installed|failed
+  - name: Fixing Windows
+    shell:  find /vagrant -type f -exec sed -i 's/\r$//g'  {} +
