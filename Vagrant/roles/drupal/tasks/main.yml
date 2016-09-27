@@ -10,9 +10,19 @@
     file: path=/etc/drush state=directory owner=vagrant group=vagrant
     register: drushdir_exists
 
+  - name: Create public_html
+    file: path=/var/www/public_html/ state=directory
+    register: public_html
+
   - name: Creating tmp dir
     file: path=/var/www/public_html/sites/default/tmp state=directory
     register: tmp
+
+  - name: syncing public_html
+    shell:  rsync -r /tmp/public_html/ /var/www/public_html
+
+  - name: changing perms
+    shell:  chown -R vagrant:vagrant /var/www/public_html
 
   - name: Drupal -- Copying Drush Alias
     copy: src=drush_alias dest=/etc/drush/aliases.drushrc.php owner=vagrant group=vagrant
@@ -23,6 +33,9 @@
 
   - name: Drupal -- Copying settings.php
     copy: src=settings.php dest=/var/www/public_html/sites/default/settings.php
+
+  - name: Drupal -- Copying local settings.php
+    copy: src=settings.local.php dest=/var/www/public_html/sites/default/settings.local.php
 
   - name: Drupal Drush -- copying drush install
     copy: src=drush_install.sh dest=/usr/local/bin owner=root group=root mode=0777
@@ -44,3 +57,6 @@
     become_user: root
 
   - cron: name="Drupal Cron" minute="0" hour="*/10" job="drush @vagrant.homepage core-cron > /dev/null"
+
+  - name: Rebuild Cache
+    shell: cd /var/www/public_html/sites/default/ && drush cr

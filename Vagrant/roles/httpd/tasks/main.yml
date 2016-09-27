@@ -32,14 +32,6 @@
     copy: src=httpd.conf dest=/etc/httpd/conf/httpd.conf
     notify: Restart Apache
 
-  - name: Enable local configuration
-    copy: src=local.homepage.conf dest=/etc/httpd/conf.d/local.homepage.conf
-    notify: Restart Apache
-    register: httpdconfcopied
-
   - name: Set SELinux to permissive
     selinux: policy=targeted state=permissive
 
-  - name: Ensure Apache is started
-    when: httpdconfcopied|success
-    service: name=httpd state=started enabled=yes

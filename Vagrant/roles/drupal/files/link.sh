@@ -8,3 +8,6 @@ ln -s /usr/local/bin/refresh_db.sh /usr/bin/refresh_db
 
 rm -rf /usr/bin/importdb
 ln -s /usr/local/bin/import_db.sh /usr/bin/importdb
+
+#rm -rf /var/www/public_html/sites/default/settings.php
+#ln -s /var/www/settings.php /var/www/public_html/sites/default/settings.php

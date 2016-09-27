@@ -1,4 +1,5 @@
 <?php
+$options['r'] = '/var/www/public_html/';
 $home = drush_server_home();
 $aliases['vagrant.homepage'] = array(
    'root' => '/var/www/public_html',
